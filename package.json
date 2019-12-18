@@ -1,21 +1,27 @@
 {
-  "name": "demo-supertest-express",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node src/index.js",
-    "test": "npx jest",
-    "test:coverage": "npx jest --coverage"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
+  "description": "",
   "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-jest": "^23.1.1",
+    "faker": "^4.1.0",
     "jest": "^24.9.0",
     "supertest": "^4.0.2"
-  }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "demo-supertest-express",
+  "scripts": {
+    "start": "node --inspect src/index.js",
+    "test": "npx jest",
+    "test:coverage": "npx jest --coverage"
+  },
+  "version": "1.0.0"
 }
